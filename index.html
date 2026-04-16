@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina — Creative Agency</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Custom Cursor ───────────────────────────────────────── -->
+  <div class="cursor-dot"  id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ================================================================
+       NAVBAR
+       ================================================================ -->
+  <nav class="lm-nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="lm-logo">lumina<span>.</span></a>
+
+      <ul class="lm-nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#contact" class="nav-cta"
+             style="font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;
+                    text-transform:uppercase;padding:.55rem 1.4rem;
+                    border:1px solid var(--fog2);color:var(--cream);
+                    transition:border-color .3s,color .3s;display:inline-block;">
+            Start a Project
+          </a>
+        </li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"    class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#process"  class="mobile-link">Process</a>
+    <a href="#contact"  class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ================================================================
+       HERO
+       ================================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="divider-gold"></span>
+        <span class="label">Creative Studio — Est. 2019</span>
+      </div>
+
+      <h1 class="hero-title">
+        We craft<br>
+        <em>experiences</em>
+        that endure
+      </h1>
+
+      <p class="hero-subtitle">
+        A multidisciplinary creative agency shaping brands, digital products, and visual
+        narratives for companies that refuse to be ordinary.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn-lumina btn-lumina-filled">Explore Services</a>
+        <a href="#about"    class="btn-lumina">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero-number" aria-hidden="true">L</div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="label">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       MARQUEE
+       ================================================================ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        Brand Strategy <span class="dot">✦</span>
+        UI/UX Design <span class="dot">✦</span>
+        Motion Graphics <span class="dot">✦</span>
+        Web Development <span class="dot">✦</span>
+        Art Direction <span class="dot">✦</span>
+        Visual Identity <span class="dot">✦</span>
+        Campaign Design <span class="dot">✦</span>
+        Copywriting <span class="dot">✦</span>
+      </div>
+      <!-- Duplicate for seamless infinite loop -->
+      <div class="marquee-item" aria-hidden="true">
+        Brand Strategy <span class="dot">✦</span>
+        UI/UX Design <span class="dot">✦</span>
+        Motion Graphics <span class="dot">✦</span>
+        Web Development <span class="dot">✦</span>
+        Art Direction <span class="dot">✦</span>
+        Visual Identity <span class="dot">✦</span>
+        Campaign Design <span class="dot">✦</span>
+        Copywriting <span class="dot">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       ABOUT
+       ================================================================ -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-grid">
+
+        <!-- Image Column -->
+        <div class="about-image-wrap reveal-left">
+          <div class="about-img-frame">
+            <div class="about-img-bg"></div>
+            <div class="about-img-lines"></div>
+            <div class="about-img-number" aria-hidden="true">05</div>
+          </div>
+          <div class="about-float-card">
+            <div class="big">150+</div>
+            <div class="small">Projects Shipped</div>
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="reveal-right">
+          <div class="about-tag">
+            <span class="divider-gold"></span>
+            <span class="label">About Us</span>
+          </div>
+
+          <h2 class="about-heading">
+            Design is the<br>
+            <em class="gold serif">language</em> of intent
+          </h2>
+
+          <p class="about-text">
+            Founded in 2019, Lumina was born from the belief that exceptional design isn't
+            decoration — it's the difference between brands that are merely seen and brands
+            that are truly felt.
+          </p>
+          <p class="about-text">
+            We partner with ambitious founders, established enterprises, and culture-defining
+            companies to transform complex ideas into clear, compelling visual language.
+          </p>
+
+          <a href="#contact" class="btn-lumina" style="margin-top:1.6rem;">Work With Us</a>
+
+          <div class="about-stats">
+            <div class="stat-box reveal">
+              <div class="stat-num">12</div>
+              <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-box reveal" style="transition-delay:.1s">
+              <div class="stat-num">98%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-box reveal" style="transition-delay:.2s">
+              <div class="stat-num">5★</div>
+              <div class="stat-label">Avg Rating</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SERVICES
+       ================================================================ -->
+  <section class="services" id="services">
+    <div class="services-inner">
+
+      <div class="services-header reveal">
+        <div>
+          <div class="about-tag">
+            <span class="divider-gold"></span>
+            <span class="label">What We Do</span>
+          </div>
+          <h2 class="services-heading">
+            Capabilities built<br>for modern brands
+          </h2>
+        </div>
+        <a href="#contact" class="btn-lumina">All Services</a>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <article class="service-card reveal" style="transition-delay:.05s">
+          <div class="card-num" aria-hidden="true">01</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              <path d="M2 12h20"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Brand Identity</h3>
+          <p class="card-text">Building distinctive visual systems — logos, typography, color, and the design language that defines how the world sees your brand.</p>
+          <div class="card-tags">
+            <span class="tag">Logo Design</span>
+            <span class="tag">Guidelines</span>
+            <span class="tag">Typography</span>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="service-card reveal" style="transition-delay:.12s">
+          <div class="card-num" aria-hidden="true">02</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.2" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Digital Experience</h3>
+          <p class="card-text">Designing and building websites and digital products that feel effortless — where every interaction has intention and every pixel has purpose.</p>
+          <div class="card-tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Web Dev</span>
+            <span class="tag">Prototyping</span>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card reveal" style="transition-delay:.19s">
+          <div class="card-num" aria-hidden="true">03</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.2" aria-hidden="true">
+              <polygon points="23 7 16 12 23 17 23 7"/>
+              <rect x="1" y="5" width="15" height="14" rx="2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Motion &amp; Film</h3>
+          <p class="card-text">Animated brand stories, product explainers, and social content that move audiences — literally and emotionally — in seconds.</p>
+          <div class="card-tags">
+            <span class="tag">Animation</span>
+            <span class="tag">After Effects</span>
+            <span class="tag">3D</span>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="service-card reveal" style="transition-delay:.26s">
+          <div class="card-num" aria-hidden="true">04</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.2" aria-hidden="true">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Brand Strategy</h3>
+          <p class="card-text">Positioning, messaging frameworks, and competitive insight that give your brand a clear place in the market — and a compelling reason to exist.</p>
+          <div class="card-tags">
+            <span class="tag">Positioning</span>
+            <span class="tag">Messaging</span>
+            <span class="tag">Research</span>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="service-card reveal" style="transition-delay:.33s">
+          <div class="card-num" aria-hidden="true">05</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.2" aria-hidden="true">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Campaign Design</h3>
+          <p class="card-text">Integrated creative campaigns spanning print, digital, outdoor, and social — built around a single powerful idea that spreads.</p>
+          <div class="card-tags">
+            <span class="tag">Print</span>
+            <span class="tag">Social</span>
+            <span class="tag">OOH</span>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="service-card reveal" style="transition-delay:.4s">
+          <div class="card-num" aria-hidden="true">06</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.2" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Creative Direction</h3>
+          <p class="card-text">Embedded creative leadership for shoots, campaigns, and product launches — ensuring every touchpoint aligns with one cohesive vision.</p>
+          <div class="card-tags">
+            <span class="tag">Art Direction</span>
+            <span class="tag">Styling</span>
+            <span class="tag">Production</span>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PROCESS
+       ================================================================ -->
+  <section class="process" id="process">
+    <div class="process-inner">
+
+      <div class="process-header reveal">
+        <div class="about-tag" style="justify-content:center">
+          <span class="divider-gold"></span>
+          <span class="label">How We Work</span>
+        </div>
+        <h2 class="process-heading">
+          A refined process,<br>every time
+        </h2>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal" style="transition-delay:.05s">
+          <div class="step-bubble">01</div>
+          <h4 class="step-title">Discovery</h4>
+          <p class="step-text">We immerse ourselves in your world — goals, audience, competitors, and the whitespace nobody's filling yet.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.15s">
+          <div class="step-bubble">02</div>
+          <h4 class="step-title">Strategy</h4>
+          <p class="step-text">We align on positioning, creative direction, and KPIs before a single pixel is moved or a word is written.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.25s">
+          <div class="step-bubble">03</div>
+          <h4 class="step-title">Creation</h4>
+          <p class="step-text">Our team executes with precision — iterating with you closely so nothing ships that doesn't feel right.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.35s">
+          <div class="step-bubble">04</div>
+          <h4 class="step-title">Launch</h4>
+          <p class="step-text">We deliver fully documented, production-ready assets and stay on hand for the days that matter most.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT
+       ================================================================ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-grid">
+
+        <!-- Left Info -->
+        <div class="reveal-left">
+          <div class="about-tag">
+            <span class="divider-gold"></span>
+            <span class="label">Get In Touch</span>
+          </div>
+
+          <h2 class="contact-heading">
+            Let's build something<br>
+            <em class="gold serif">worth remembering</em>
+          </h2>
+
+          <p class="contact-text">
+            Whether you have a brief, a hunch, or just the beginning of an idea — we'd love
+            to hear from you. Projects of all sizes welcome.
+          </p>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>hello@lumina.studio</span>
+          </div>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/>
+            </svg>
+            <span>+1 (212) 555-0184</span>
+          </div>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>New York · London · Tokyo</span>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="reveal-right">
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="fname">First Name</label>
+                <input type="text" id="fname" class="form-control-lm" placeholder="Jane" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="lname">Last Name</label>
+                <input type="text" id="lname" class="form-control-lm" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" class="form-control-lm" placeholder="jane@company.com" required />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="service">Service Interest</label>
+              <select id="service" class="form-control-lm"
+                style="appearance:none;-webkit-appearance:none;
+                       background-image:url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%278%27 viewBox=%270 0 12 8%27%3E%3Cpath d=%27M1 1l5 5 5-5%27 stroke=%27%23c9a84c%27 stroke-width=%271.5%27 fill=%27none%27/%3E%3C/svg%3E');
+                       background-repeat:no-repeat;background-position:calc(100% - 1rem) center;cursor:none;">
+                <option value=""              style="background:#16161e">Select a service…</option>
+                <option                       style="background:#16161e">Brand Identity</option>
+                <option                       style="background:#16161e">Digital Experience</option>
+                <option                       style="background:#16161e">Motion &amp; Film</option>
+                <option                       style="background:#16161e">Brand Strategy</option>
+                <option                       style="background:#16161e">Campaign Design</option>
+                <option                       style="background:#16161e">Creative Direction</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="message">Your Message</label>
+              <textarea id="message" class="form-control-lm"
+                placeholder="Tell us about your project, timeline, and budget…"
+                required></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn-lumina btn-lumina-filled"
+                style="width:100%;text-align:center;">
+                Send Message →
+              </button>
+            </div>
+
+            <div class="form-success" id="formSuccess">
+              ✦ &nbsp; Message received — we'll be in touch within 24 hours.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="lm-logo">lumina<span>.</span></a>
+          <p>A creative studio crafting brands and digital experiences for companies that demand the extraordinary.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Dribbble">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Brand Identity</a></li>
+            <li><a href="#services">Digital Experience</a></li>
+            <li><a href="#services">Motion &amp; Film</a></li>
+            <li><a href="#services">Brand Strategy</a></li>
+            <li><a href="#services">Campaign Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@lumina.studio">hello@lumina.studio</a></li>
+            <li><a href="tel:+12125550184">+1 (212) 555-0184</a></li>
+            <li><a href="#">New York Office</a></li>
+            <li><a href="#">London Office</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lumina Creative Studio. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp;
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
